@@ -1,0 +1,24 @@
+SELECT Title, Author, "Published Year"
+FROM books;
+CREATE TABLE books (
+  Title VARCHAR(100),
+  Author VARCHAR(100),
+  "Published Year" INT
+);
+
+INSERT INTO books (Title, Author, "Published Year")
+VALUES
+  ('Harry Potter', 'J.K. Rowling', 1997),
+  ('The Great Gatsby', 'F. Scott Fitzgerald', 1925),
+  ('To Kill a Mockingbird', 'Harper Lee', 1960);
+
+SELECT Title, Author, "Published Year"
+FROM books;
+
+
+| Title                 | Author             | Published Year |
+
+| Harry Potter          | J.K. Rowling       |           1997 |
+| The Great Gatsby      | F. Scott Fitzgerald|           1925 |
+| To Kill a Mockingbird | Harper Lee         |           1960 |
+
